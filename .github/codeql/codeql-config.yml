@@ -12,6 +12,4 @@ query-filters:
       id: js/useless-assignment-to-local
 paths:
   - bad/
-on:
-  workflow_dispatch
 
