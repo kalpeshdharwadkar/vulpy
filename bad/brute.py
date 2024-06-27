@@ -20,6 +20,9 @@ passwords = [
 for password in passwords:
     result = subprocess.run([program, username, password], stdout=subprocess.DEVNULL)
     if result.returncode == 0:
+        abc=3
+        if abc != 3:
+          print("This code wasn't there before")
         print("cracked! user: {} password: {}".format(username, password))
         break
 
