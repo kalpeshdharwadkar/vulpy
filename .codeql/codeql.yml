@@ -1,0 +1,17 @@
+name: "CodeQL config for vulpy"
+queries: 
+  - uses: security-extended
+query-filters: 
+  - exclude:
+      problem.severity:
+        - warning
+        - recommendation
+  - exclude:
+      id: js/html-constructed-from-input
+  - exclude:
+      id: js/useless-assignment-to-local
+paths:
+  - bad/
+on:
+  workflow_dispatch
+
